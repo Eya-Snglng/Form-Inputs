@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Survey Form</title>
+    <h1>Survey Form</h1>
+    <style>
+      body {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 100;
+        font-style: normal;
+        background-color: #496989;
+        color: #dcf2f1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form target="_blank">
+      <h3>Customer Name</h3>
+      <label for="fname">First Name:</label><br />
+      <input id="fname" type="text" required /><br />
+
+      <label for="lname">Last name:</label><br />
+      <input id="lname" type="text" required /><br />
+
+      <h3>E-mail</h3>
+      <label for="e-mail">Email:</label><br />
+      <input id="e-mail" type="email" required /><br />
+
+      <label for="passw">Password:</label><br />
+      <input id="passw" type="password" required /><br />
+
+      <h3>Location</h3>
+      <select id="country">
+        <br />
+        <optgroup label="First District">
+          <option value="cavitecity">Cavite City</option>
+          <option value="kawit">Kawit</option>
+          <option value="noveleta">Noveleta</option>
+          <option value="rosario">Rosario</option>
+        </optgroup>
+        <optgroup label="Second District">
+          <option value="bacoor">Bacoor</option>
+        </optgroup>
+        <optgroup label="Third District">
+          <option value="imus">Imus</option>
+        </optgroup>
+        <optgroup label="Fourth District">
+          <option value="dasmarinas">Dasmarinas</option>
+        </optgroup>
+        <optgroup label="Fifth District">
+          <option value="carmona">Carmona</option>
+          <option value="silang">Silang</option>
+          <option value="gma">General Mariano Alvarez</option>
+        </optgroup>
+        <optgroup label="Sixth District">
+          <option value="gentri">General Trias</option>
+        </optgroup>
+        <optgroup label="Seventh District">
+          <option value="amadeo">Amadeo</option>
+          <option value="indang">Indang</option>
+          <option value="tanza">Tanza</option>
+          <option value="trece">Trece Martires</option>
+        </optgroup>
+        <optgroup label="Eighth District">
+          <option value="tagaytay">Tagaytay</option>
+          <option value="alfonso">Alfonso</option>
+          <option value="gea">General Emilio Aguinaldo</option>
+          <option value="magallanes">Magallanes</option>
+          <option value="maragondon">Maragondon</option>
+          <option value="mendez">Mendez</option>
+          <option value="naic">Naic</option>
+          <option value="ternate">Ternate</option>
+        </optgroup>
+      </select>
+      <br />
+
+      <label for="country">Select Country</label>
+      <br />
+
+      <h3>Personal Details</h3>
+      <input id="male" name="gender" type="radio" />
+      <label for="male">Male</label> <br />
+
+      <input id="female" name="gender" type="radio" />
+      <label for="female">Female</label> <br />
+
+      <input id="notsay" name="gender" type="radio" />
+      <label for="notsay">Prefer not to say</label> <br />
+
+      <br />
+      <br />
+
+      <input type="reset" />
+      <a href="destination.html"
+        ><button onclick="document.location='destination.html'">
+          Submit!
+        </button></a
+      >
+    </form>
+  </body>
+</html>
